@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #138383;
+            border-radius: 10px;
+            background-color: #94d1d1;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #85c2ca;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8adadd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aadhar Card Registration Form</h1>
+        <form>
+                <label for="aadhaarNumber">Aadhaar Number:</label>
+                <input type="text" id="aadhaarNumber" name="aadhaarNumber" required><br><br>
+        
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+        
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+        
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </body>
+        
+</html>
